@@ -1,0 +1,205 @@
+.bodyText {
+    font-size: 17px;
+    color: white;
+}
+
+.bodyText2 {
+    font-size: 25px;
+    color: white;
+}
+
+.titleText {
+    font-size: 30px;
+    color: powderblue;
+    text-transform: uppercase;
+}
+
+.mainForm {
+    background: pink;
+    padding: 2em;
+    border-radius: 15px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+    color: black;
+    font-size: 17px;
+    padding: 4px 20px;
+    height: 35px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+    box-shadow: -3px 3px 5px black;
+    margin: 10px;
+    border-radius: 3px;
+    flex-grow: 1;
+    background: white;
+}
+
+.valid {
+    border-bottom: 3px solid green !important;
+    border-left: 3px solid green !important;
+}
+
+.invalid {
+    border-bottom: 3px solid red !important;
+    border-left: 3px solid red !important;
+}
+
+.show {
+    visibility: visible !important;
+}
+
+.mobile-show {
+    display: block !important;
+}
+
+.form-row {
+  flex-direction: row;
+  display: flex;
+}
+
+.form-panel {
+  background-color: none;
+}
+
+.button-82-pushable {
+position: relative;
+border: none;
+background: transparent;
+padding: 0;
+cursor: pointer;
+outline-offset: 4px;
+transition: filter 250ms;
+user-select: none;
+-webkit-user-select: none;
+touch-action: manipulation;
+}
+
+.button-82-shadow {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+border-radius: 12px;
+background: hsl(0deg 0% 0% / 0.25);
+will-change: transform;
+transform: translateY(2px);
+transition:
+    transform
+    600ms
+    cubic-bezier(.3, .7, .4, 1);
+}
+
+.button-82-edge {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+border-radius: 12px;
+background: linear-gradient(
+    to left,
+    hsl(240deg 100% 16%) 0%,
+    hsl(240deg 100% 32%) 8%,
+    hsl(240deg 100% 32%) 92%,
+    hsl(240deg 100% 16%) 100%
+);
+}
+
+.button-82-front {
+display: block;
+position: relative;
+padding: 12px 27px;
+border-radius: 12px;
+font-size: 1.1rem;
+color: white;
+background: hsl(200deg 100% 47%);
+will-change: transform;
+transform: translateY(-4px);
+transition:
+    transform
+    600ms
+    cubic-bezier(.3, .7, .4, 1);
+}
+
+.button-82-pushable-grey {
+    position: relative;
+    border: none;
+    background: transparent;
+    padding: 0;
+    outline-offset: 4px;
+    transition: filter 250ms;
+    user-select: none;
+    -webkit-user-select: none;
+    outline: none;
+    opacity: 0.5
+}
+
+.button-82-front-grey {
+    display: block;
+    position: relative;
+    padding: 12px 27px;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    color: white;
+    background: grey;
+}
+
+@media (min-width: 768px) {
+.button-82-front {
+    font-size: 1.25rem;
+    padding: 12px 42px;
+}
+}
+
+.button-82-pushable:hover {
+filter: brightness(110%);
+-webkit-filter: brightness(110%);
+}
+
+.button-82-pushable:hover .button-82-front {
+transform: translateY(-6px);
+transition:
+    transform
+    250ms
+    cubic-bezier(.3, .7, .4, 1.5);
+}
+
+.button-82-pushable:active .button-82-front {
+transform: translateY(-2px);
+transition: transform 34ms;
+}
+
+.button-82-pushable:hover .button-82-shadow {
+transform: translateY(4px);
+transition:
+    transform
+    250ms
+    cubic-bezier(.3, .7, .4, 1.5);
+}
+
+.button-82-pushable:active .button-82-shadow {
+transform: translateY(1px);
+transition: transform 34ms;
+}
+
+.button-82-pushable:focus:not(:focus-visible) {
+outline: none;
+}
+
+/*Medium Screens*/
+@media (min-width: 768px) {
+    .bodyText {
+        font-size: 19px;
+        color: white;
+    }
+
+    .mobile-show {
+        display: none !important;
+    }
+}
