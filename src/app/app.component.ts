@@ -33,6 +33,8 @@ export class NgbdModalContent {
 })
 
 export class AppComponent {
+  showMad = false;
+  
   constructor(private modalService: NgbModal, private service: ServicesService) {}
 
   bikerForm = new FormGroup({
@@ -65,8 +67,10 @@ export class AppComponent {
   }
 
   onSubmit() {
+    this.showMad = true;
     this.service.saveMessage(this.bikerForm.value).subscribe(response =>{
       this.bikerForm.reset();
+      this.showMad = false;
       this.modalService.open(NgbdModalContent);
     })
   }

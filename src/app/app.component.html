@@ -1,5 +1,6 @@
-<div class="d-flex justify-content-center pt-2 pb-2">
-  <h1>Bike Partner Application</h1>
+<div class="d-flex justify-content-center pt-2 pb-2 mx-5">
+  <h1 *ngIf="!showMad">Bike Partner Application</h1>
+  <h1 *ngIf="showMad">PLEASE WAIT >:[</h1>
 </div>
 <div class="container">
   <form class="mainForm" [formGroup]="bikerForm">
